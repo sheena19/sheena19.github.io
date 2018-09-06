@@ -1,0 +1,18 @@
+
+<div >
+    <h1 class="mb-0">{{mydetails[0].gsx$firstname.$t}}
+    <span class="text-primary">{{mydetails[0].gsx$lastname.$t}}</span>
+</h1>
+
+<div class="subheading mb-5">{{mydetails[0].gsx$address.$t}}
+    <a href="mailto:name@email.com">{{mydetails[0].gsx$email.$t}}</a>
+</div>
+
+<p class="mb-5">{{mydetails[0].gsx$aboutme.$t}}</p>
+</div>
+<ul class="list-inline list-social-icons mb-0">
+    <li class="list-inline-item" ng-repeat="data in social">
+        <sociallink socialdetail=data></sociallink>
+    </li>
+</ul>
+
